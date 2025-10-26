@@ -26,13 +26,12 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-lg">
         <div className="p-6 border-b">
-          <h1 className="text-2xl font-bold text-primary">EROS Admin</h1>
+          <h1 className="text-2xl font-bold text-purple-600">Thirsty Admin</h1>
           <p className="text-sm text-gray-600 mt-1">{adminUser?.email}</p>
-          <span className="inline-block mt-2 px-2 py-1 text-xs font-semibold text-primary bg-primary/10 rounded">
+          <span className="inline-block mt-2 px-2 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded">
             {adminUser?.role}
           </span>
         </div>
-
         <nav className="p-4 space-y-2">
           {navItems.map((item) => (
             <Link
