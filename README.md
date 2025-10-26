@@ -1,6 +1,6 @@
-# EROS Admin Dashboard
+# Thirsty Admin Dashboard
 
-A comprehensive admin dashboard for the EROS dating application, built with React, Vite, TypeScript, and Supabase.
+A comprehensive admin dashboard for the Thirsty dating application, built with React, Vite, TypeScript, and Supabase.
 
 ## Features
 
@@ -43,7 +43,7 @@ Get these values from your Supabase project settings:
 ### 3. Apply Database Schema
 
 The admin schema must be applied to your Supabase database. The schema file is located at:
-`../eros-app/supabase/admin_schema.sql`
+`../thirsty-app/supabase/admin_schema.sql`
 
 Apply it via Supabase SQL Editor:
 1. Go to your Supabase project dashboard
@@ -124,8 +124,8 @@ netlify deploy --prod --dir=dist
 A `Dockerfile` is included. To build and run:
 
 ```bash
-docker build -t eros-admin .
-docker run -p 8080:80 -e VITE_SUPABASE_URL=your-url -e VITE_SUPABASE_ANON_KEY=your-key eros-admin
+docker build -t thirsty-admin .
+docker run -p 8080:80 -e VITE_SUPABASE_URL=your-url -e VITE_SUPABASE_ANON_KEY=your-key thirsty-admin
 ```
 
 ## Security Considerations
